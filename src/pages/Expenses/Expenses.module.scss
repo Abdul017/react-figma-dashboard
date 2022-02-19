@@ -1,0 +1,254 @@
+.expenses{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 75vw;
+    background-color: #101010;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expensesCard{
+    background-color: white;
+    width: 95vw;
+    height: 95vh;
+    border-radius: 30px;
+    display: flex;
+}
+
+.expensesOverview{
+    width: 65%;
+    padding: 5rem;
+
+    overflow-y: scroll;
+}
+
+.expensesHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.expensesTitle{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.expensesActions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.personOne{
+    position: relative;
+    left: -73px;
+    z-index: 3;
+}
+.personTwo{
+    position: relative;
+    left: -83px;
+    z-index: 2;
+}
+.personThree{
+    position: relative;
+    left: -93px;
+    z-index: 1;
+}
+
+.addIcon{
+    cursor: pointer;
+}
+
+.dateRange{
+    margin-top: 1rem;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
+
+.expensesOverviewHeader{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #dedede;
+}
+
+.expensesOveriewTitle{
+    font-size: 1.8px;
+    font-weight: 600;
+}
+
+.expenseItem{
+    margin: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expenseItemLeft{
+    display: flex;
+    align-items: center;
+}
+
+.expenseItemDiv{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.expenseItemDetails{
+    margin-left: 1rem;
+}
+
+.expenseItemTitle{
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+}
+
+.expenseItemTime{
+    opacity: .5;
+}
+
+.expenseItemPrice{
+    font-weight: 500;
+}
+
+.moneyOverview{
+    width: 35%;
+    background-color: #f9fafc;
+    border-radius: 0 50px 50px 0;
+    padding: 5rem 2rem;
+    overflow-y: scroll;
+}
+
+.moneyOverviewTitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.spendCategory{
+    display: flex;
+    justify-content: space-between;
+}
+.spendCategoryName{
+    font-weight: 500;
+}
+
+.spendCategoryBar{
+    height: 5px;
+    width: 100%;
+    background-color: #ECEFF5;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.spendCategoryColoredBar{
+    height: 5px;
+    width: 20%;
+    background-color: #31ba95;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.saveMoneyDiv{
+    width: 70%;
+    margin: 0 auto;
+    background-color: #9da1a9;
+    margin-top: 4rem;
+    padding: 2rem;
+    border-radius: 15px;
+
+    position: relative;
+}
+
+.boxes{
+    position: absolute;
+    top: -15px;
+    left: 20px;
+}
+
+.plant{
+    position: absolute;
+    top: -31px;
+    left: 187px;
+}
+
+.saveMoneyTitle{
+    font-weight: 600;
+    margin-top: 4rem;
+
+}
+
+.saveMoneyInfo{
+    opacity: .7;
+    margin-top: .5rem;
+    line-height: 21px;
+    letter-spacing: 0.020571px;
+}
+
+.button{
+    cursor: pointer;
+    background-color: #101010;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    line-height: 15px;
+    padding: 1rem 3rem;
+    margin-top: 1.5rem;
+    
+}
+
+
+@media (min-width: 321px) and (max-width: 768px){
+  .expenses{
+      width: 65vw;
+      background-color: #dedede;
+
+      overflow-y: scroll;
+      overflow-x: hidden;
+      
+  }
+
+  .expensesCard{
+      display: block;
+      border-radius: 0;
+  }
+
+  .expensesHeader{
+      display: block;
+  }
+  .expensesActions{
+      justify-content: flex-end;
+  }
+
+  .moneyOverview{
+      width: 50vw;
+  }
+
+  .plant{
+      left: 220px;
+  }
+  .saveMoneyTitle{
+      text-align: center;
+  }
+  .saveMoneyInfo{
+      text-align: center;
+  }
+
+  .button{
+      margin: 2px auto;
+  }
+}

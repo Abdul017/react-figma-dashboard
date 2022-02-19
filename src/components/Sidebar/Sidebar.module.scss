@@ -1,0 +1,103 @@
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 25vw;
+    background-color: #101010;
+    color: white; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarContent{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profileDetails{
+    margin-top: 2rem;
+}
+
+.profileImageDiv{
+    position: relative;
+}
+
+.notifications{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #dc3434; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: -12px;
+    right: 70px;
+    cursor: pointer;
+}
+
+.userName{
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.userEmail{
+    margin-top: 1rem;
+    opacity: 0.6;
+}
+
+
+.sidebarNav{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.sidebarNavItem{
+    margin: 2rem 0;
+    
+}
+
+.sidebarNavLink{
+    text-decoration: none;
+    outline: none;
+    color: white;
+    opacity: 0.5;
+    font-size: 25px;
+    font-weight: 400;
+
+
+    &Active{
+        @extend .sidebarNavLink;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px){
+ .sidebar{
+    width: 30vw;
+     margin-left: 0;
+ }   
+
+ .userName{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.userEmail{
+    font-size: 10px;
+}
+ .sidebarNavLink{
+     margin: 0;
+     font-size: 30px;
+     font-weight: 400;
+ }
+}
